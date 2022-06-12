@@ -1,11 +1,26 @@
  html {
   box-sizing: border-box;
+  padding:0
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+.linkbar, .content, .content-primary {
+  margin: auto 60px;
+}
+
+
+
+.image {
+  border: 4px solid blue;
+  height: 100px;
+  width: 100px;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   font-family: Roboto, Ubuntu, 'Open Sans', sans-serif;
@@ -14,6 +29,8 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  background-color: #1F2937;
+  padding-top: 8px;
 }
 
 .linkbar {
@@ -24,7 +41,93 @@ body {
 
 .links {
   display: flex;
+  gap:16px;
+}
 
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-main {
+  flex: 0 1 auto;
+  width: 600px;
+}
+
+.header-image {
+  flex: 1 0 auto;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  background-color: darkgray;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.item div {
+  border-radius: 8px;
+}
+
+.content-primary {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+.content {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.image-placeholder {
+  text-align: center;
+  background-color: darkgray;
+  color: #E5E7EB;
+}
+
+.secondary {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #F9FAF8;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
 }
 
 ul {
@@ -35,6 +138,21 @@ ul {
 
 a {
   text-decoration: none;
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+button {
+  background-color: #3882F6;
+  color: #E5E7EB;
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: none;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #265cb4;
 }
 
 
