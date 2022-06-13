@@ -83,6 +83,7 @@ body {
 .content-items {
   flex: 1 1 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
   align-items: center;
